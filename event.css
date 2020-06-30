@@ -15,7 +15,7 @@ body {
 
 body {
     position: relative;
-    background: linear-gradient(to bottom, transparent, black 60%), url(images/pubg2.jpg);
+    background: linear-gradient(to bottom, transparent, black 60%), url('images/pubg2.jpg');
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;

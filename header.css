@@ -133,7 +133,7 @@ header a {
 
 .header_img_area .bg-pos::before {
     content: '';
-    background-image: url(images/menu_bar_leftred.png);
+    background-image: url('images/menu_bar_leftred.png');
     background-position: left bottom;
     background-repeat: no-repeat;
     width: 55%;
@@ -146,7 +146,7 @@ header a {
 
 .bg-pos::after {
     content: '';
-    background-image: url(images/menu_bar_rightred.png);
+    background-image: url('images/menu_bar_rightred.png');
     background-position: right bottom;
     background-repeat: no-repeat;
     width: 55%;
