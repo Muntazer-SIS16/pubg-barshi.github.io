@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="userprofile_css.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../foot.css">
+
+</head>
+
+<body class="">
+    <!-- Navbar -->
+    <div class="jumbotron p-0 m-0">
+
+        <!-- Navbar -->
+        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
+            <!-- upper navbar icon -->
+
+            <div class="primary-navbar" id="primary-navbar">
+                <div class="header-icon">
+                    <!-- Social Icon -->
+                    <div class="header_social d-inline-block">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Login and register place -->
+                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
+                        <ul class="navbar-nav">
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="login_icon p-0 pr-3">
+                                        <img src="../slider_img/login-icon.png" alt="">
+                                    </span>
+                                    <span class="login_button">
+                                        Login
+                                    </span>
+                                </a>
+                            </li>
+
+                            <!-- Register -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="reg_icon p-0 pr-3">
+                                        <img src="../slider_img/reg-icon.png" alt="">
+                                    </span>
+                                    <span class="reg_button">
+                                        Register
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upper Navbar Icon's -->
+            <!-- This div use for left and right image -->
+            <div class="bg-pos"></div>
+            <div class="header_outer_area">
+                <a id="xs-navbar-brand" href="#" class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto" alt="Brand Image">
+                </a>
+                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
+                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide' data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="left-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
+                                <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
+                            </div>
+                        </ul>
+                        <!-- Navbar Brand  -->
+                        <div class="nav-brand-div">
+                            <a href="index.html" class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                                <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Navbar Right Content when large screen appear -->
+
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="right-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
+                                <li class="nav-item"><a href="aboutUsPage.php" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <div class="container-fluid position-relative">
+        <div class="row">
+            <div class="col-md-12 rat">
+
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="col-md-12  fat">
+                <div class="center button" onmouseover="button()">
+                    <img alt="person image" src="../images/profile.jpg">
+                </div>
+
+                <div class="first center popout">
+                    <img src="https://img.icons8.com/dotty/50/000000/edit-property.png" /> </div>
+
+                <div class="second center popout">
+                    <img src="https://img.icons8.com/dotty/80/000000/edit-image.png" /> </div>
+
+                <div class="third center popout">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/calendar.png" />
+                </div>
+
+                <div class="fourth center popout">
+                    <img src="https://img.icons8.com/dusk/64/000000/bell.png" />
+                </div>
+
+                <div class="fifth center popout">
+                    <img src="https://img.icons8.com/cute-clipart/64/000000/settings.png" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- User Stats -->
+    <div class="container-fluid user_stats">
+        <div class="row sat">
+
+            <div class="col-12 pro_name text-center">
+                <h1 style="color: honeydew; "> SHIKHA BABRAL </h1>
+                <h3 style="color: honeydew; ">CURRENT BALANCE:0</h3>
+            </div>
+
+
+            <h1 class="col-12 user_stats-heading text-center ">
+                Player Statics
+            </h1>
+
+            <div class="col-sm-6 col-md-3">
+                <a href="#!">
+                    <div class="earning">
+                        <i class="fas fa-money-bill-alt earn "></i>
+                        <h4 style="color: white; ">0</h4>
+                        <h6 style="color: white; ">Total earnings</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#!">
+                    <div class="game_played">
+                        <i class="fas fa-user-tag " style="color: greenyellow; "></i>
+                        <h4 style="color: white; ">0</h4>
+                        <h6 style="color: white; ">Game Played</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#!">
+                    <div class="match_played">
+                        <img src="https://gamingmonk.com/images/icons/matches-played.svg " alt=" ">
+                        <h4 style="color: white; ">0</h4>
+                        <h6 style="color: white; ">Matches Played</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <a href="#!">
+                    <div class="won">
+                        <img src="https://gamingmonk.com/images/icons/matches-won.svg " alt=" ">
+                        <h4 style="color: white; ">0</h4>
+                        <h6 style="color: white; ">Matches Won</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recently Stats -->
+    <div class="container-fluid recent_play_section ">
+        <div class="row ">
+
+            <!-- Heading -->
+            <h1 class="col-12 user_stats-heading text-center ">
+                Recently Play
+            </h1>
+
+            <!-- Recently Played -->
+            <div class="col-11 mt-3 mx-auto ">
+                <div class="recent_play bg-dark p-2 " style="height: 200px; ">
+                    <div class="recent_play_icon mb-3 ">
+                        <img src="https://cdn.gamingmonk.com/games_played.png " alt=" " style="height: 20px; ">
+                    </div>
+                    <div class="recent_play_games ">
+                        <img src="../images/pubg.jpg " alt=" " style="width: 100px; height: 120px; ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Tournament -->
+    <div class="container-fluid my_tournament ">
+        <div class="row ">
+            <!-- Heading -->
+            <h1 class="col-12 user_stats-heading text-center ">
+                My Tournament
+            </h1>
+            <!-- Tournament -->
+            <div class="col-11 bg-dark mt-3 mx-auto ">
+                <div class="tournament pt-4 pb-4 ">
+                    <div class="tournament_icon ">
+                        <img src="https://gamingmonk.com/images/icons/my-tournaments.svg " alt=" ">
+                    </div>
+
+                    <div class="tournament_content mt-3 pt-4 pb-4 ">
+                        <div class="container-fluid ">
+                            <div class="row ">
+                                <div class="col-sm-5 col-md-3 col-lg-3 ">
+                                    <div class="card ">
+                                        <img src="../images/pubg.jpg " alt=" " class="card-img-top ">
+                                        <hr class="bg-light ">
+                                        <div class="card-title p-2 ">
+                                            <h5 class="text-white ">
+                                                1vs1
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5 col-md-3 col-lg-3 ">
+                                    <div class="card ">
+                                        <img src="../images/pubg.jpg " alt=" " class="card-img-top ">
+                                        <hr class="bg-light ">
+                                        <div class="card-title p-2 ">
+                                            <h5 class="text-white ">
+                                                1vs1
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5 col-md-3 col-lg-3 ">
+                                    <div class="card ">
+                                        <img src="../images/pubg.jpg " alt=" " class="card-img-top ">
+                                        <hr class="bg-light ">
+                                        <div class="card-title p-2 ">
+                                            <h5 class="text-white ">
+                                                1vs1
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Teams -->
+    <div class="container-fluid my_team ">
+        <div class="row ">
+            <!-- Heading -->
+            <h1 class="col-12 user_stats-heading text-center ">
+                My Team
+            </h1>
+            <!-- My Team -->
+            <div class="col-11 bg-dark mt-3 mx-auto ">
+                <div class="team p-2 ">
+                    <img src="https://gamingmonk.com/images/icons/my-teams.svg " alt=" ">
+                </div>
+
+                <!-- My Team Table Info -->
+                <div class="my_team_table ">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid game_id ">
+        <div class="row ">
+            <!-- Heading -->
+            <h1 class="col-12 user_stats-heading text-center ">
+                Game ID's
+            </h1>
+            <!-- Game_ID -->
+            <div class="col-11 bg-dark mt-3 mx-auto ">
+                <div class="game_id_logo ">
+                    <img src="https://gamingmonk.com/images/icons/game-ids.svg " alt=" ">
+                </div>
+                <hr class="bg-light ">
+
+                <div class="game_id_content ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-md-6 mx-auto ">
+                                <div class="game_id--div ">
+                                    <div class="h4 ">
+                                        <span class="id-text-left ">PUBG ID:</span>
+                                        <span class="id-text-right ">PUBG12987</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="game_id--div ">
+                                    <div class="h4 ">
+                                        <span class="id-text-left ">PUBG ID:</span>
+                                        <span class="id-text-right ">PUBG12987</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="game_id--div ">
+                                    <div class="h4 ">
+                                        <span class="id-text-left ">PUBG ID:</span>
+                                        <span class="id-text-right ">PUBG12987</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="game_id--div ">
+                                    <div class="h4 ">
+                                        <span class="id-text-left ">PUBG ID:</span>
+                                        <span class="id-text-right ">PUBG12987</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container ">
+                <!-- <img src="https://gamingmonk.com/images/gamer-at-work.png " alt=" "> -->
+                <div class="game_work_logo ">
+                    <img src="https://gamingmonk.com/images/gamer-at-work.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+        <!-- For lg snd up screen -->
+        <div class="container-fluid ">
+            <div class="row p-0 m-0 ">
+                <!-- First Column -->
+                <div class="col-lg-3 ">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block ">
+                        <h3>OG TOURNAMENT</h3>
+                        <hr>
+                        <div class="footer-navbar ">
+                            <ul>
+                                <li><a href="# ">Home</a></li>
+                                <li><a href="# ">Home</a></li>
+                                <li><a href="# ">Home</a></li>
+                                <li><a href="# ">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -> Hide on large or wider screen -->
+                    <div id="accordion " class="d-lg-none ">
+                        <div class="card ">
+                            <div class="card-header ">
+                                <a href="#OG " data-toggle="collapse " class="card-link d-block ">OG TOURNAMENT</a>
+                            </div>
+                            <div id="OG " class="collapse " data-parent="#accordion ">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item "><a href="# " class="nav-link text-white pl-5 ">Home</a></li>
+                                    <li class="nav-item "><a href="# " class="nav-link pl-5 text-white ">Home</a></li>
+                                    <li class="nav-item "><a href="# " class="nav-link pl-5 text-white ">Home</a></li>
+                                    <li class="nav-item "><a href="# " class="nav-link pl-5 text-white ">Home</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-lg-3 ">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block ">
+                        <h3>COMMUNITY</h3>
+                        <hr>
+                        <div class="footer-navbar ">
+                            <ul>
+                                <li><a href="# ">About</a></li>
+                                <li><a href="# ">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -->
+                    <div id="accordion " class="d-lg-none ">
+                        <div class="card ">
+                            <div class="card-header ">
+                                <a href="#community " data-toggle="collapse " class="card-link d-block ">COMMUNITY</a>
+                            </div>
+                            <div id="community " class="collapse " data-parent="#accordion ">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item "><a href="# " class="nav-link pl-5 text-white ">About</a></li>
+                                    <li class="nav-item "><a href="# " class="nav-link pl-5 text-white ">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Column -->
+                <div class="col-lg-3 ">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block ">
+                        <h3>SUPPORT</h3>
+                        <hr>
+                        <div class="footer-navbar ">
+                            <ul>
+                                <li><a href="# ">Privacy Policy</a></li>
+                                <li><a href="# ">Terms of Service</a></li>
+                                <li><a href="# ">Legality</a></li>
+                                <li><a href="# ">Refund & Cancellation Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -->
+                    <div id="accordion " class="d-lg-none ">
+                        <div class="card ">
+                            <div class="card-header ">
+                                <a href="#support " data-toggle="collapse " class="card-link d-block ">SUPPORT</a>
+                            </div>
+                            <div id="support " class="collapse " data-parent="#accordion ">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Privacy
+                                            Policy</a>
+                                    </li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Terms of
+                                            Service</a></li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Legality</a>
+                                    </li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Refund &
+                                            Cancellation Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Column -->
+                <div class="col-lg-3 ">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block ">
+                        <h3>FOLLOW US</h3>
+                        <hr>
+                        <div class="footer-navbar ">
+                            <ul>
+                                <li><a href="# ">Facebook</a></li>
+                                <li><a href="# ">Twitter</a></li>
+                                <li><a href="# ">YouTube</a></li>
+                                <li><a href="# ">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -->
+                    <div id="accordion " class="d-lg-none w-100 bg-danger ">
+                        <div class="card w-100 bg-danger ">
+                            <div class="card-header ">
+                                <a href="#follow " data-toggle="collapse " class="card-link d-block ">FOLLOW US</a>
+                            </div>
+                            <div id="follow " class="collapse " data-parent="#accordion ">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Facebook</a>
+                                    </li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Twitter</a>
+                                    </li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">YouTube</a>
+                                    </li>
+                                    <li class="nav-item "><a class="nav-link pl-5 text-white " href="# ">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JavaScript/Home.js "></script>
+    <script>
+        function button() {
+
+            document.getElementsByClassName("button")[0].classList.toggle("spin");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+.matches-table {
+    background: linear-gradient(to right, rgb(31, 30, 30) 0%, rgb(255, 2, 2) 100%);
+}
+
+.matches-table table thead {
+    background: linear-gradient(to right, black 5%, grey 95%);
+    color: white;
+    font-weight: 700;
+}
+
+.matches-table table thead tr {
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+}
+
+.matches-table table tbody tr {
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+}
+
+.matches-table table tbody td {
+    text-transform: uppercase;
+    font-size: 15px;
+    vertical-align: middle;
+    color: white;
+    font-weight: 600;
+}
+
+.matches-table table tbody td img {
+    width: 40px;
+    height: 40px;
+}
+
+.matches-table table tbody td p {
+    margin: 0;
+    font-size: 13px;
+    color: rgb(187, 182, 182);
+}
+
+.matches-table table i {
+    font-size: 30px;
+}
+
+.matches-table a {
+    color: white;
+}
+
+.matches-table a:hover {
+    color: orangered;
+}
+
+.rank img {
+    width: 60px !important;
+    height: 60px !important;
+}

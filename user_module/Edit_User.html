@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="Edit_User.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="foot.css">
+
+    <!-- Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet"> -->
+</head>
+
+<body>
+    <!-- Jumbotron -->
+    <div class="jumbotron p-0 m-0">
+
+        <!-- Navbar -->
+        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
+            <!-- upper navbar icon -->
+
+            <div class="primary-navbar" id="primary-navbar">
+                <div class="header-icon">
+                    <!-- Social Icon -->
+                    <div class="header_social d-inline-block">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Login and register place -->
+                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
+                        <ul class="navbar-nav">
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a href="" data-toggle="modal" data-target="#login_modal" class="nav-link">
+                                    <span class="login_icon p-0 pr-3">
+                                        <img src="slider_img/login-icon.png" alt="">
+                                    </span>
+                                    <span class="login_button">
+                                        Login
+                                    </span>
+                                </a>
+                            </li>
+
+                            <!-- Register -->
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <span class="reg_icon p-0 pr-3">
+                                        <img src="slider_img/reg-icon.png" alt="">
+                                    </span>
+                                    <span class="reg_button">
+                                        Register
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upper Navbar Icon's -->
+            <!-- This div use for left and right image -->
+            <div class="bg-pos"></div>
+            <div class="header_outer_area" id="header_outer_area">
+                <a id="xs-navbar-brand" href="#"
+                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
+                        alt="Brand Image">
+                </a>
+                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
+                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
+                        data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="left-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
+                                <li class="nav-item"><a href="tournament.html" class="nav-link">Events</a></li>
+                            </div>
+                        </ul>
+                        <!-- Navbar Brand  -->
+                        <div class="nav-brand-div">
+                            <a href="index.html"
+                                class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                                <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Navbar Right Content when large screen appear -->
+
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="right-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="#" class="nav-link">Demo</a></li>
+                                <li class="nav-item"><a href="aboutUsPage.php" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Login</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link d-lg-none">Register</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <!-- Slider Section -->
+        <div class="container-fluid">
+            <!-- Row One -->
+            <div class="row">
+                <div class="col-md-12 px-0">
+                    <!-- Carousel -->
+                    <div class="carousel slide carousel-fade cc" data-ride="carousel" id="car">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#car" data-slide-to="0">1</li>
+                            <li data-target="#car" data-slide-to="1">2</li>
+                            <li data-target="#car" data-slide-to="2">3</li>
+                            <li data-target="#car" data-slide-to="3">4</li>
+                        </ol>
+                        <!-- End of Indicators -->
+                        <div class="carousel-inner text-center text-uppercase cimg">
+                            <!-- Image1 -->
+                            <div class="carousel-item active">
+                                <div class="images">
+                                    <div class="img-fluid1" id="img-1">
+
+                                    </div>
+                                    <!-- <img class="img-fluid" src="slider_img/cod1.jpg" alt=""> -->
+                                    <div class="overdiv"></div>
+                                    <!-- Carousel Caption -->
+                                    <div class="carousel-caption">
+                                        <h3 class="d-block mx-auto text-center">Get Ready for The Online Gaming
+                                            Tournament</h3>
+                                        <p class="text-center pbtn">
+                                            <a href="" class="btn btn_red text-uppercase">
+                                                <span class="s1"><img src="slider_img/button1.png" alt=""></span>
+                                                <span class="s2">Register Now!</span>
+                                            </a>
+                                            <a href="" class="btn btn_red text-uppercase">
+                                                <span class="s1"><img src="slider_img/button2.png" alt=""></span>
+                                                <span class="s2">Login</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image2 -->
+                            <div class="carousel-item">
+                                <div class="img-fluid1" id="img-2">
+
+                                </div>
+                                <!-- <img class="img-fluid" src="slider_img/ff2.jpg" alt=""> -->
+                                <div class="overdiv"></div>
+                                <!-- Carousel Caption -->
+                                <div class="carousel-caption">
+                                    <h3>Get Ready for The Online Gaming Tournament</h3>
+                                    <p class="text-center pbtn">
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button1.png" alt=""></span>
+                                            <span class="s2">Register Now!</span>
+                                        </a>
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button2.png" alt=""></span>
+                                            <span class="s2">Login</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Image3 -->
+                            <div class="carousel-item">
+                                <div class="img-fluid1" id="img-3">
+
+                                </div>
+                                <!-- <img class="img-fluid" src="slider_img/fortnite.jpg" alt=""> -->
+                                <div class="overdiv"></div>
+                                <!-- Carousel Caption -->
+                                <div class="carousel-caption">
+                                    <h3>Get Ready for The Online Gaming Tournament</h3>
+                                    <p class="text-center pbtn">
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button1.png" alt=""></span>
+                                            <span class="s2">Register Now!</span>
+                                        </a>
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button2.png" alt=""></span>
+                                            <span class="s2">Login</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Image4 -->
+                            <div class="carousel-item">
+                                <div class="img-fluid1" id="img-4">
+
+                                </div>
+                                <!-- <img class="img-fluid" src="slider_img/pubg2.jpg" alt=""> -->
+                                <div class="overdiv"></div>
+                                <!-- Carousel Caption -->
+                                <div class="carousel-caption">
+                                    <h3>Get Ready for The Online Gaming Tournament</h3>
+                                    <p class="text-center pbtn">
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button1.png" alt=""></span>
+                                            <span class="s2">Register Now!</span>
+                                        </a>
+                                        <a href="" class="btn btn_red text-uppercase">
+                                            <span class="s1"><img src="slider_img/button2.png" alt=""></span>
+                                            <span class="s2">Login</span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Carousel -->
+                </div>
+            </div>
+            <!-- End of Row One -->
+        </div>
+    </div>
+
+    <!-- Gap -->
+    <div class="gap_top_main" style="height: 20vh;"></div>
+    <!-- Tabs Container -->
+    <div class="container-fluid second-section">
+        <div class="row">
+
+            <!-- Container / Page main heading -->
+            <div class="col-12 text-center">
+                <h1 class="page_heading">EDIT <span class="heading_2">PROFILE</span></h1>
+                <p>Change your profile settings and gaming preferences</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="col-12">
+                <!-- <ul class="nav" id="pills-tab">
+                    <li class="nav-item" id="tab-1">
+                        <a class="nav-link active" data-toggle="tab" href="#user_profile">
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-2">
+                        <a class="nav-link" data-toggle="tab" href="#password">
+                            Change Password
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-3">
+                        <a class="nav-link" data-toggle="tab" href="#game_prefer">
+                            Game preferences
+                        </a>
+                    </li>
+                    <li class="nav-item" id="tab-4">
+                        <a class="nav-link" data-toggle="tab" href="#game_id">
+                            Game ID / Network ID
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;">
+
+                    </div>
+                </div> -->
+                <main>
+                    <div id="tabs" class="">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#user_profile">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#password">
+                                    Section 2
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#game_prefer">
+                                    Section 3
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#game_id">
+                                    Section 4
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content">
+
+                    </div>
+                </main>
+            </div>
+
+            <!-- Tabs Content -->
+            <div class="col-11 mx-auto mt-4">
+                <div class="tab-content d-block" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="user_profile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="username">Username: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fullname">Fullname: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email">Email: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="mobile">Mobile:</label>
+                                    <input type="number" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="social">Social username:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="dob">Date of Birth:</label>
+                                    <input type="date" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="gender" class="d-block">Gender:</label>
+                                    <input type="radio" value="Male" name="gender" class="">
+                                    <label for="gender">Male</label>
+                                    <input type="radio" value="Female" name="gender" class="">
+                                    <label for="gender">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="country">Country:</label>
+                                    <select name="country" class="form-control" disabled>
+                                        <option value="">India</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="state">State:</label>
+                                    <select name="state" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">India</option>
+                                        <option value="">Indiana jones</option>
+                                        <option value="">Demo</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="city">City:</label>
+                                    <select name="city" class="form-control">
+                                        <option value=""></option>
+                                        <option value="">India</option>
+                                        <option value="">Indiana jones</option>
+                                        <option value="">Demo</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="about">About me:</label>
+                                    <textarea name="" id="" class="form-control"></textarea>
+                                </div>
+
+                                <div class="col-6 mx-auto">
+                                    <label for="currentpassword" class="text-center d-block mt-3">Enter Current
+                                        Password:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+
+                            <!-- Update Button -->
+                            <button class="btn d-block mx-auto mt-4">Update</button>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="password">
+                        <form action="" method="POST">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="current_pass_2">Current password: </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="new_password">New password:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="confirm_password">Confirm password:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <!-- Update Button -->
+                                    <button class="btn d-block mx-auto mt-4">Update</button>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="game_prefer">
+                        <div class="container">
+                            <div class="row p-3 border border-info">
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="">
+                                        <a href="#">
+                                            <div class="game_prefer_images">
+                                                <div class="info">
+                                                    <h3>PUBG MOBILE</h3>
+                                                    <p>Tournament: 4</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Button for add game -->
+                                <div class="col-12 mt-4 text-center">
+                                    <a href="#" class="btn border-info">Add New Game</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="game_id">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="pubg">PUBG ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="cod">COD ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="freefire">Free Fire ID: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="fortnite">Fortnite: </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <!-- Update Button -->
+                                <button class="btn d-block mx-auto mt-4">Submit</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+
+    </script>
+</body>
+
+</html>

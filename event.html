@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAR ZONE </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="Jquery/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="foot.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Jumbotron -->
+    <div class="jumbotron p-0 m-0">
+        <!-- Navbar -->
+        <div class="header_img_area position-fixed w-100" style="z-index: 10000;">
+            <!-- upper navbar icon -->
+            <div class="primary-navbar" id="primary-navbar">
+                <div class="header-icon">
+                    <!-- Social Icon -->
+                    <!-- Login and register place -->
+                    <div class="access navbar p-0 pr-5 navbar-expand d-inline-block">
+                        <ul class="navbar-nav">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Upper Navbar Icon's -->
+            <!-- This div use for left and right image -->
+            <div class="bg-pos"></div>
+            <div class="header_outer_area" id="header_outer_area">
+                <a id="xs-navbar-brand" href="#"
+                    class="navbar-brand nav-brand-xs w-100 d-block position-fixed d-lg-none">
+                    <img src="https://www.iglnetwork.com/assets/images/logo.png" class="d-block mx-auto"
+                        alt="Brand Image">
+                </a>
+                <header id="navbar-header" class="main-navbar navbar navbar-expand-lg ">
+                    <button id="navbar-toggle" class="navbar-toggler navbar-light" data-target='#navbar-hide'
+                        data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" style="top: 54px;" id="navbar-hide">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="left-navbar mx-auto navbar-nav">
+                                <li class="nav-item"><a href="game_page.html" class="nav-link">Games</a></li>
+                                <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
+                            </div>
+                        </ul>
+                        <!-- Navbar Brand  -->
+                        <div class="nav-brand-div">
+                            <a href="index.html"
+                                class="brnd-pos navbar-brand d-none position-absolute d-lg-block mx-auto">
+                                <img src="https://www.iglnetwork.com/assets/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Navbar Right Content when large screen appear -->
+
+                        <ul class="navbar-nav first w-100 m-0">
+                            <div class="right-navbar mx-auto navbar-nav">
+
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="match_info text-white position-relative text-center">
+        <div class="match_info_inner">
+            <div class="match_header">
+                <h1 class="display-4">TEAM DEATHMATCH</h1>
+                <div class="match_stats">
+                    <h4 class="display-4" style="font-size: 30px;">TEAMS JOINED : 0 / 32 | PLAYERS IN EACH TEAM: 4</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="event_main_page container">
+        <div class="row bg-dark">
+            <div class="col-md-6 mx-auto pro_pic_section">
+                <!-- page main profile -->
+                <div class="profile_img">
+                    <img class="" src="images/battle.jpg">
+                </div>
+            </div>
+
+            <!-- second row for heading -->
+            <div class="col-md-6 p-4">
+
+                <!-- game heading -->
+                <!-- <h1 id="aa" style="margin-left: 350px; color: cornsilk;">PUBG Mobile Ultimate</h1> -->
+                <div class="game_heading text-center">
+                    <h1 id="aa" style="color: cornsilk;">PUBG Mobile Ultimate</h1>
+                </div>
+
+                <!-- registration status of the game -->
+
+                <div class="register text-center">
+                    <!-- margin 430 replace  with txt-center -->
+                    <a href="" class="btn bg-danger position-relative">
+                        <span class="pr-3" style="border-right: 2px solid white;">
+                            <i class="fa-li fa fa-check-square"></i>
+                        </span>
+                        <span style="color: cornsilk;" class="pl-2">REGISTERATION NOT STARTED</span>
+                    </a>
+                </div>
+                <!-- Platform status -->
+                <div class="row">
+                    <div class="col-md-12 mt-2 text-center">
+                        <span style="color: cornsilk;" class="h6">Platform:</span>
+                        <i class="fas fa-mobile-alt" style="color: cornsilk;"></i>
+                    </div>
+                </div>
+
+                <!-- Date time, prize and team space status -->
+
+                <div class="row mt-4" id="aa">
+                    <div class="col-12 col-md-4 col-xl-4 p-0 mx-auto text-center">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h5>5july,3:00pm</h5>
+                    </div>
+                    <div class="col-12 col-md-4 col-xl-4 p-0 mx-auto text-center">
+                        <i class="fas fa-trophy"></i>
+                        <h5>terms</h5>
+                    </div>
+                    <div class="col-12 col-md-4 col-xl-4 p-0 mx-auto text-center">
+                        <i class="fas fa-users"></i>
+                        <h5>0/100</h5>
+                    </div>
+                </div>
+                <!-- Registeration status and rules button -->
+                <div class="rule-row row mt-4">
+                    <div class="col-12 col-md-12 col-lg-4 mt-3 mb-3">
+                        <a style="color: cornsilk;" href="#!" class="btn bg-danger w-100 mx-auto">not started</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4  mt-3 mb-3">
+                        <a href="#!" class="btn text-white w-100 mx-auto" style="background: #000000;">RULES</a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-3 mb-3 mx-auto">
+                        <a href="#!" class="btn text-white w-100 mx-auto" style="background: #0a9b12;">Team Joined</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <!-- Schedule Breakup -->
+    <div class="schedule-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-auto p-4 mt-5 bg-dark">
+                    <div class="icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <!-- <h3 style="color: cornsilk;" id="table-">SCHEDULE</h3> -->
+                    <table class="table table-striped table-dark text-center">
+                        <caption>
+                            Schedule
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Events</th>
+                                <th>Tentative Start Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>REGISTERATION START's</td>
+                                <td>3:00pm</td>
+                            </tr>
+                            <tr>
+                                <td>REGISTERATION CLOSED</td>
+                                <td>5:30pm</td>
+                            </tr>
+                            <tr>
+                                <td>GAME START'S </td>
+                                <td>6:00pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prize pool table  -->
+    <div class="prize-pool-table container mb-5">
+        <div class="row">
+            <div class="col-md-12 mx-auto p-4 mt-5 bg-dark">
+                <div class="icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <!-- <h3 style="color: cornsilk;">PRIZE POOL BEAKUP</h3> -->
+                <table class="table table-striped table-dark text-center">
+                    <caption>
+                        Prize Pool Breakup
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Standings</th>
+                            <th>Cash Prize</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Winner</td>
+                            <td>prize money will be declared after registeration is completed</td>
+                        </tr>
+                        <tr>
+                            <td>Runner Up</td>
+                            <td>prize money will be declared after registeration is completed</td>
+                        </tr>
+                        <tr>
+                            <td>Most Kill's</td>
+                            <td>prize money will be declared after registeration is completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Icons -->
+        <div class="icons text-white">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <!-- For lg snd up screen -->
+        <div class="container">
+            <div class="row p-0 m-0">
+                <!-- First Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>OG TOURNAMENT</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="game_page.html">Home</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -> Hide on large or wider screen -->
+                    <div id="accordion" class="d-lg-none">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#OG" data-toggle="collapse" class="card-link d-block">OG TOURNAMENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+
+
+                <!-- Third Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <!-- Accordions -->
+                    <div id="accordion" class="d-lg-none">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#support" data-toggle="collapse" class="card-link d-block">SUPPORT</a>
+                            </div>
+                            <div id="support" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Column -->
+                <div class="col-lg-3">
+                    <!-- Custom Navbar -> Hide from xs to md devices -->
+                    <div class="custom_navbar d-none d-lg-block">
+                        <h3>FOLLOW US</h3>
+                        <hr>
+                        <div class="footer-navbar">
+                            <ul>
+                                <li><a href="#!">Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Accordions -->
+                    <div id="accordion" class="d-lg-none w-100 bg-danger">
+                        <div class="card w-100 bg-danger">
+                            <div class="card-header">
+                                <a href="#follow" data-toggle="collapse" class="card-link d-block">FOLLOW US</a>
+                            </div>
+                            <div id="follow" class="collapse" data-parent="#accordion">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link pl-5 text-white" href="#!">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <center>
+<h3>Designed and Created by Souravsing</h3>
+</center>
+    <script src="JavaScript/Home.js"></script>
+</body>
+
+</html>

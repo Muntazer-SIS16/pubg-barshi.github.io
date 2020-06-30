@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Event</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../Jquery/jquery-3.4.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../Font/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="Organizer_CreateNewEventCSS.css">
+    <link rel="stylesheet" href="Org_navbar.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+</head>
+
+<body>
+    <!-- Main Navbar -->
+    <!-- Navbar -->
+    <div class="main_navbar">
+        <nav class="navbar navbar-expand-lg navbar-mainbg">
+            <a class="navbar-brand navbar-logo" href="#">Bloodshed</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <div class="hori-selector">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Index.html"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i
+                                class="far fa-calendar-alt"></i>Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documents</a>
+                    </li>
+                </ul>
+
+                <div class="nav-item profile_navbar w-25 d-flex mr-auto">
+                    <div class="profile">
+                        <img src="../images/profile.jpg" style="height: 100%; width: 100%;" alt="">
+                    </div>
+                    <div class="profile_info text-white pl-2">
+                        <span class="username d-block">GAGANDEEP SINGH</span>
+                        <span class="user_status d-block position-relative">ONLINE</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Sidebar / Code -->
+    <header>
+        
+        <div class="hamburger">
+            <i class="nav_icon fas fa-bars"></i>
+        </div>
+        <nav class="sidebar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="" class="nav-link current">
+                        <i title="Dashboard" class="fas fa-tachometer-alt"></i>Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Create Event" class="fas fa-plus-square"></i>Create Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Check Event" class="fas fa-check-double"></i>Check Event
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Activity" class="fab fa-readme"></i>Activity
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i title="Logout" class="fas fa-sign-out-alt"></i>Logout
+                    </a>
+                </li>
+            </ul>
+            <div class="social-media">
+                <a href="" class="icon-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="icon-link">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="" class="icon-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="icon-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Body Section / Tabs -->
+    <div class="container-fluid">
+        <!-- Tabs(Basics, Info , Settings) -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12 px-0">
+                <div class="tabs bg-dark">
+                    <ul class="nav nav-tabs  text-center" role="tablist">
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab1" role="tab">
+                                <h6>Basics</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab2" role="tab">
+                                <h6>Info</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="tab" href="#tab3" role="tab">
+                                <h6>Settings</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------------------------------------------------------------------------------------------------------- -->
+        <!-- End of Tab's link coding -->
+        <!-- Tab's Content -->
+        <div class="row mt-5">
+            <div class="col-12 px-0">
+                <div class="tab-content bg-dark text-white p-4">
+                    <!-- Tab-First's Content i.e. BASICS  -->
+                    <div id="tab1" class="tab-pane fade show active ml-3" role="tabpanel">
+                        <!-- i.e. Required input fields like name, type and time/date of game event -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="required-fields">
+                                    <h4>Required Fields</h4>
+                                    <hr>
+                                    <form action="" method="POST">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-gamepad"></i><label for="">&nbsp;&nbsp;Selected
+                                                        Game</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-font"></i><label
+                                                        for="">&nbsp;&nbsp;Tournament/Event Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <select class="form-control floating-select bg-transparent"
+                                                        name="GamePlatform" id="GamePlatform">
+                                                        <option class="bg-dark text-white" value=""></option>
+                                                        <option class="bg-dark text-white" value="#">PC</option>
+                                                        <option class="bg-dark text-white" value="#">Mobile</option>
+                                                        <option class="bg-dark text-white" value="#">Another</option>
+                                                    </select>
+                                                    <i class="fas fa-laptop"></i><label for="">&nbsp;&nbsp;Game
+                                                        Platform</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-money-check-alt"></i><label
+                                                        for="">&nbsp;&nbsp;Price</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="div">
+                                                    <input class="form-control" type="text" name="" required>
+                                                    <i class="fas fa-trophy"></i><label for="">&nbsp;&nbsp;Prize</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <select class="form-control floating-select bg-transparent"
+                                                        name="GameType" id="GameType">
+                                                        <option class="bg-dark text-white" value=""></option>
+                                                        <option class="bg-dark text-white" value="#">Solo</option>
+                                                        <option class="bg-dark text-white" value="#">Duo</option>
+                                                        <option class="bg-dark text-white" value="#">Squad</option>
+                                                    </select>
+                                                    <i class="fas fa-users"></i><label for="">&nbsp;&nbsp;Game
+                                                        Type</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">
+                                                <div class="div">
+                                                    <input class="form-control" placeholder="" type="" name="" required>
+                                                    <i class="fas fa-calendar-alt"></i><label for="">&nbsp;&nbsp;Start
+                                                        Date & Time</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <!-- optional fields like logo-img, about the game(description) or banner of game event -->
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-12 mt-4 mb-3">
+                                            <h4>Optional Fields</h4>
+                                            <hr>
+                                            <div class="logo-img">
+                                                <form action="">
+                                                    <div class="row">
+                                                        <div class="col-md-12 px-0">
+                                                            <label for="">Logo</label>
+                                                        </div>
+                                                        <div class="col-md-10 text-center border px-0">
+                                                            <div class="image1">
+                                                                <img src="" class="fas fa-camera" onclick="imgUpload()"
+                                                                    id="uploadedLogoImg" alt="">
+                                                                <input type="file" accept="image/*" name="image"
+                                                                    id="file" onchange="loadFile(this)">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-4 mb-4 px-0">
+                                            <div class="optional-fields">
+                                                <div class="accordion_container">
+                                                    <div class="accordion_head bg-dark border">About<span
+                                                            class="plusminus float-right">+</span>
+                                                    </div>
+                                                    <div class="accordion_body bg-secondary border">
+                                                        <textarea name="" id="text-editor"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mb-5 pb-5">
+                                            <div class="logo-img2 pb-5">
+                                                <form action="">
+                                                    <div class="row">
+                                                        <div class="col-md-12 px-0">
+                                                            <label for="">Event Banner</label>
+                                                        </div>
+                                                        <div class="col-md-10 text-center border px-0">
+                                                            <div class="image2">
+                                                                <img src="" class="fas fa-camera" onclick="imgUpload2()"
+                                                                    id="uploadedLogoImg2" alt="">
+                                                                <input type="file" accept="image/*" name="image"
+                                                                    id="file2" onchange="loadFile2(this)">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- --------------------------------Eof Tab-first's content---------------------------------------------- -->
+                    <!-- --------------------------Tab-second's Content i.e. INFO -------------------------------------------- -->
+                    <div id="tab2" class="tab-pane fade ml-3" role="tabpanel">
+                        <!-- In Tab 2 i.e. INFO tab , Organizers will give details that how players can contact to them like on fb, twitter etc -->
+                        <h4 class="mt-3">How Will Your Players Contact You?</h4>
+                        <hr>
+                        <div class="contact-input-field mt-3">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <select class="form-control bg-transparent" name="" id="">
+                                            <option class="bg-dark text-white" selected disabled value="">Select an
+                                                Option</option>
+                                            <option class="bg-dark text-white" value="">Facebook</option>
+                                            <option class="bg-dark text-white" value="">Twitter</option>
+                                            <option class="bg-dark text-white" value="">Email</option>
+                                        </select>
+                                        <i class="fas fa-address-card"></i><label for=""></label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="contact-url">
+                                            <input class="form-control" type="text" required>
+                                            <i class="fas fa-address-card"></i><label for="">Enter Your Contact
+                                                Details</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mt-4 mb-4 px-0">
+                                <!-- this text editor for adding more details about their(organizers) connections -->
+                                <div class="contact-details">
+                                    <div class="accordion_container">
+                                        <div class="accordion_head bg-dark border">Contact Details<span
+                                                class="plusminus float-right">+</span>
+                                        </div>
+                                        <div class="accordion_body bg-secondary border">
+                                            <textarea name="" id="text-editor1"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4 mb-4 px-0">
+                                <!-- Organizers can add rules about game event in this box -->
+                                <div class="Rules">
+                                    <div class="accordion_container">
+                                        <div class="accordion_head bg-dark border">Rules<span
+                                                class="plusminus float-right">+</span>
+                                        </div>
+                                        <div class="accordion_body bg-secondary border">
+                                            <textarea name="" id="text-editor2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4 mb-4 px-0">
+                                <!-- Adding Details about prizes -->
+                                <div class="Prizes">
+                                    <div class="accordion_container">
+                                        <div class="accordion_head bg-dark border">Prizes<span
+                                                class="plusminus float-right">+</span>
+                                        </div>
+                                        <div class="accordion_body bg-secondary border">
+                                            <textarea name="" id="text-editor3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4 mb-5 pb-5 px-0">
+                                <!-- Adding details about game event schedule -->
+                                <div class="Schedule">
+                                    <div class="accordion_container">
+                                        <div class="accordion_head bg-dark border">Schedule<span
+                                                class="plusminus float-right">+</span>
+                                        </div>
+                                        <div class="accordion_body bg-secondary border">
+                                            <textarea name="" id="text-editor4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Eof Tab-SEcond's content(INFO) -->
+                    <!--  Tab-third's content i.e. SETTINGS -->
+                    <!-- tab 3 contains fields like game region, players limit etc -->
+                    <div id="tab3" class="tab-pane fade" role="tabpanel">
+                        <h4 class="ml-3">Required Fields</h4>
+                        <hr>
+                        <div class="settings-required-field">
+                            <form action="">
+                                <div class="container-fluid">
+                                    <div class="row mt-3 mb-5 pb-5">
+                                        <div class="col-md-4 mt-3">
+                                            <div class="div">
+                                                <select class="form-control floating-select bg-transparent" name=""
+                                                    id="">
+                                                    <option class="bg-dark text-white" selected disabled value="">
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="1">Uttar Pradesh</option>
+                                                    <option class="bg-dark text-white" value="2">Delhi</option>
+                                                    <option class="bg-dark text-white" value="3">Rajasthan</option>
+                                                    <option class="bg-dark text-white" value="4">Himachal Pradesh
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="5">Jammu and Kashmir
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="6">Haryana</option>
+                                                    <option class="bg-dark text-white" value="7">Uttarakhand</option>
+                                                    <option class="bg-dark text-white" value="8">Chandigarh</option>
+                                                    <option class="bg-dark text-white" value="9">Ladakh</option>
+                                                    <option class="bg-dark text-white" value="10">SriNagar</option>
+                                                    <option class="bg-dark text-white" value="11">Haridwar</option>
+                                                </select>
+                                                <i class="fas fa-globe"></i><label for="">Game Region</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mt-3">
+                                            <div class="div">
+                                                <select class="form-control floating-select bg-transparent" name=""
+                                                    id="">
+                                                    <option class="bg-dark text-white" selected disabled value="">
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="1">Summoners Rift</option>
+                                                    <option class="bg-dark text-white" value="2">Twisted Treeline
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="3">Howling Abyss</option>
+                                                </select>
+                                                <i class="fas fa-map"></i><label for="">Game Map</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mt-3">
+                                            <div class="div">
+                                                <select class="form-control floating-select bg-transparent" name=""
+                                                    id="">
+                                                    <option class="bg-dark text-white" selected disabled value="">
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="1">Tournament Draft
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="2">Blind Pick</option>
+                                                    <option class="bg-dark text-white" value="3">Draft Mode</option>
+                                                    <option class="bg-dark text-white" value="4">All Random</option>
+                                                </select>
+                                                <i class="fas fa-random"></i><label for="">Game Format</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-3">
+                                            <div class="div">
+                                                <select class="form-control floating-select bg-transparent" name=""
+                                                    id="">
+                                                    <option class="bg-dark text-white" selected disabled value="">
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="1">1v1</option>
+                                                    <option class="bg-dark text-white" value="2">Pre-Made Teams</option>
+                                                    <option class="bg-dark text-white" value="3">Free Agent Draft
+                                                    </option>
+                                                    <option class="bg-dark text-white" value="4">Pre-Made & Free Agent
+                                                    </option>
+                                                </select>
+                                                <i class="fas fa-users"></i><i class="fas fa-random"></i><label
+                                                    for="">Tournament Format</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-3">
+                                            <div class="div">
+                                                <input class="form-control" type="text">
+                                                <i class="fas fa-users"></i><label for="">Minimum Players Per
+                                                    Team</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-5 ">
+                                            <h4>Advanced Fields</h4>
+                                            <hr>
+                                        </div>
+                                        <div class="col-md-5 ">
+                                            <div class="checkin bg-dark">
+                                                <label for="">Check-In</label>
+                                                <label class="switch-light switch-candy " onclick="">
+                                                    <input type="checkbox">
+                                                    <span class="bg-dark border border-light">
+                                                        <span class="off">Disabled</span>
+                                                        <span class="on">Enabled</span>
+                                                        <a class="bg-secondary"></a>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-4">
+                                            <div class="div">
+                                                <input class="form-control" type="text">
+                                                <label for="">Check-In Start Time</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-3">
+                                            <div class="Participant-limit bg-dark">
+                                                <label for="">Registration Participant Limit</label>
+                                                <label class="switch-light switch-candy" onclick="">
+                                                    <input type="checkbox">
+                                                    <span class="bg-dark border border-light">
+                                                        <span class="off">Unlimited</span>
+                                                        <span class="on">Limited</span>
+                                                        <a class="bg-secondary"></a>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-4">
+                                            <div class="div">
+                                                <input type="text" class="form-control">
+                                                <label for="">Limit</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 mt-3 mb-5 pb-5">
+                                            <div class="Country-flag bg-dark">
+                                                <label for="">Country Flags</label>
+                                                <label class="switch-light switch-candy" onclick="">
+                                                    <input type="checkbox">
+                                                    <span class="bg-dark border border-light">
+                                                        <span class="off">Off</span>
+                                                        <span class="on">On</span>
+                                                        <a class="bg-secondary"></a>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                    <!-- Eof Tab-third's content(settings) -->
+
+
+                </div>
+            </div>
+            <!-- Eof Tab's content -->
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 px-0">
+            <div class="footer mt-5 bg-dark p-5">
+                
+                <button class="btn btn1 text-white mt-1">Next&nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i></button>
+                <button class="btn btn2 float-left text-white mt-1 bg-transparent border"><i class="fas fa-arrow-alt-circle-left"></i>&nbsp;&nbsp;Back</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+    <!-- End of footer -->
+    <!-- <script src="Organizer_CreateNewEvent_JS.js"></script> -->
+    <script src="../JavaScript/Organizer_menu.js"></script>
+    <script src="Organizer_Dashboard.js"></script>
+</body>
+
+</html>
